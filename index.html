@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Full Stack Developer Portfolio</title>
+      <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Python FullStack Developer</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+             <li><a href="https://github.com/deepikavm2109" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+    <div class="home-content">
+        <div class="home-flex">
+            <img src="images/DEEPIKA.jpg" alt="Deepika Vichare" class="profile-photo">
+            <div class="home-text">
+                <h1>Hello, I'm Deepika</h1>
+                <h2>I am a <span class="typing"></span></h2>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>I am a passionate Python Full Stack Developer with experience in building web applications using Django, React, and RESTful APIs. I love turning ideas into real-world applications.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+   <section id="skills" class="section skills-section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <!-- Frontend Skills -->
+        <div class="skill-column">
+            <h3>Frontend</h3>
+            <div class="skill">HTML, CSS & Bootstrap</div>
+            <div class="skill">Javascript, ES-6</div>
+            <div class="skill">React.Js</div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skill-column">
+            <h3>Backend</h3>
+            <div class="skill">Python</div>
+            <div class="skill">Django, DRF</div>
+            <div class="skill">REST APIs</div>
+            <div class="skill">MySQL/PostgreSQL</div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" onclick="openModal('project1')">
+                <h3>OLX India Clone</h3>
+                <p>Full stack classifieds platform application built with Django and React.</p>
+            </div>
+            <div class="project-card" onclick="openModal('project2')">
+                <h3>Task Management API</h3>
+                <p>A simple API for managing tasks with Django REST Framework and MySQL.</p>
+            </div>
+            <div class="project-card" onclick="openModal('project3')">
+                <h3>Portfolio Website</h3>
+                <p>My personal portfolio website showcasing my projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div id="project1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h3>Classifieds Platform Application</h3>
+            <p>
+                This platform allows users to register, login (with JWT authentication), post ads, and browse or search listings across various categories. 
+            </p>
+        </div>
+    </div>
+    <div id="project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h3>Simple API for managing tasks</h3>
+            <p>The API should also include user authentication and error handling. Also Users should
+be able to create, retrieve, update and delete their own tasks  and mark them as complete.</p>
+        </div>
+    </div>
+    <div id="project3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h3>Portfolio Website</h3>
+            <p>Interactive portfolio website built to showcase my skills and projects. Includes animations, modals, and responsive design.</p>
+        </div>
+    </div>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <p><strong>Name:</strong> Deepika Vichare</p>
+        <p><strong>Email:</strong> deepikavmofficial@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Location:</strong> Mumbai, India</p>
+        <p>
+            <strong>GitHub:</strong> 
+            <a href="https://github.com/deepikavm2109" target="_blank">
+                github.com/deepikavm2109
+            </a>
+        </p>
+        <p>
+            <strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/deepika-vichare-meethal-5b078220a" target="_blank">
+           linkedin.com/in/deepika-vichare-meethal-5b078220a
+            </a>
+        </p>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Deepika Vichare | Python Full Stack Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
